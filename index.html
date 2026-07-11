@@ -10,26 +10,30 @@
         :root {
             --brand-purple: #5145e5;
             --brand-dark: #1e1b4b;
-            --brand-gold: #eab308;
         }
+        /* خلفية احترافية بيضاء هادئة مستوحاة من نمط الصورة المرفقة */
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #f8fafc;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('bg-pattern.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
     </style>
 </head>
-<body class="text-slate-800 antialiased">
+<body class="text-slate-800 antialiased min-h-screen flex flex-col">
 
     <!-- Header / Nav -->
-    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <!-- IMPORTANT: Name your logo image file "logo.png" and upload it to the main repository folder -->
+                <!-- الشعار الأساسي -->
                 <img src="logo.png" alt="ID Logo" class="h-10 w-10 object-contain rounded-lg">
-                <span class="font-bold text-xl tracking-tight text-indigo-900">INFORMATION<span class="text-indigo-600">DOMAINS</span></span>
+                <!-- تم إضافة المسافة هنا بدقة -->
+                <span class="font-bold text-xl tracking-wider text-indigo-950">INFORMATION <span class="text-indigo-600">DOMAINS</span></span>
             </div>
             <div>
-                <a href="mailto:admin@informationdomains.com" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition shadow-sm flex items-center gap-2">
+                <a href="mailto:admin@informationdomains.com" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition shadow-xs flex items-center gap-2">
                     <i class="fa-regular fa-envelope"></i> Contact Broker
                 </a>
             </div>
@@ -37,85 +41,87 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 text-center">
-        <div class="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 shadow-xs">
-            <span class="flex h-2 w-2 rounded-full bg-indigo-600 animate-pulse"></span> premium digital real estate
-        </div>
-        <h1 class="text-4xl md:text-6xl font-black text-indigo-950 tracking-tight max-w-4xl mx-auto leading-tight">
-            Your Gateway to Premium <span class="text-indigo-600">TLDs</span>, Domain Trading & Market Insights
-        </h1>
-        <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Navigating the evolution of web addressing—from classic extensions to Web3 blockchain registries. We acquire, manage, and broker high-value digital assets.
-        </p>
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="mailto:admin@informationdomains.com" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
-                Inquire About a Domain
-            </a>
-            <div class="bg-white border border-slate-200 text-slate-700 px-6 py-4 rounded-xl font-medium flex items-center gap-2 shadow-xs">
-                <i class="fa-solid fa-lock text-emerald-500"></i> Secure Escrow Guaranteed
+    <main class="flex-grow">
+        <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 text-center">
+            <div class="inline-flex items-center gap-2 bg-indigo-50/80 border border-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 shadow-xs backdrop-blur-xs">
+                <span class="flex h-2 w-2 rounded-full bg-indigo-600 animate-pulse"></span> premium digital real estate
             </div>
-        </div>
-    </section>
+            <h1 class="text-4xl md:text-6xl font-black text-indigo-950 tracking-tight max-w-4xl mx-auto leading-tight">
+                Your Gateway to Premium <span class="text-indigo-600">TLDs</span>, Domain Trading & Market Insights
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                Navigating the evolution of web addressing—from classic extensions to Web3 blockchain registries. We acquire, manage, and broker high-value digital assets.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="mailto:admin@informationdomains.com" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
+                    Inquire About a Domain
+                </a>
+                <div class="bg-white/90 border border-slate-200 text-slate-700 px-6 py-4 rounded-xl font-medium flex items-center gap-2 shadow-xs backdrop-blur-xs">
+                    <i class="fa-solid fa-lock text-emerald-500"></i> Secure Escrow Guaranteed
+                </div>
+            </div>
+        </section>
 
-    <!-- References & Keywords Grid -->
-    <section class="bg-slate-900 text-white py-16">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Comprehensive Domain Expertise</h2>
-                <p class="text-slate-400 mt-2">Every extension, every ecosystem, tailored for serious buyers.</p>
+        <!-- References & Keywords Grid -->
+        <section class="bg-indigo-950/95 backdrop-blur-md text-white py-16 shadow-inner">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Comprehensive Domain Expertise</h2>
+                    <p class="text-indigo-200/70 mt-2">Every extension, every ecosystem, tailored for serious buyers.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-indigo-400/40 transition backdrop-blur-xs">
+                        <div class="h-12 w-12 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-5">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Legacy & gTLDs</h3>
+                        <p class="text-indigo-200/70 text-sm leading-relaxed">Expert brokering in traditional extensions (.com, .net, .co) and high-impact generic TLDs tailored for modern corporate authority.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-indigo-400/40 transition backdrop-blur-xs">
+                        <div class="h-12 w-12 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-5">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Web3 & Digital Assets</h3>
+                        <p class="text-indigo-200/70 text-sm leading-relaxed">Pioneering in decentralised namespaces and alternative registries like Unstoppable Domains, ENS, and digital property ecosystems.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:border-indigo-400/40 transition backdrop-blur-xs">
+                        <div class="h-12 w-12 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-5">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Portfolio Management</h3>
+                        <p class="text-indigo-200/70 text-sm leading-relaxed">Strategic valuation, acquisition outreach, and market trend tracking to ensure your corporate domain strategy remains future-proof.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition">
-                    <div class="h-12 w-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl mb-5">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Legacy & gTLDs</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Expert brokering in traditional extensions (.com, .net, .co) and high-impact generic TLDs tailored for modern corporate authority.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition">
-                    <div class="h-12 w-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl mb-5">
-                        <i class="fa-solid fa-link"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Web3 & Digital Assets</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Pioneering in decentralised namespaces and alternative registries like Unstoppable Domains, ENS, and digital property ecosystems.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/30 transition">
-                    <div class="h-12 w-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl mb-5">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Portfolio Management</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Strategic valuation, acquisition outreach, and market trend tracking to ensure your corporate domain strategy remains future-proof.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Email Marketing Target / Call to Action -->
-    <section class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <div class="bg-gradient-to-br from-indigo-600 to-indigo-900 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
-            <div class="relative z-10">
-                <h2 class="text-3xl font-bold mb-4">Received an offer from us?</h2>
-                <p class="text-indigo-100 max-w-lg mx-auto mb-8 text-sm md:text-base leading-relaxed">
-                    We regularly reach out to selected brands regarding premium asset alignments. If you are verifying an email communication or looking to negotiate an acquisition, let’s connect securely.
-                </p>
-                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
-                    <a href="mailto:admin@informationdomains.com" class="bg-white text-indigo-900 font-bold px-8 py-3.5 rounded-xl hover:bg-slate-50 transition shadow-md w-full sm:w-auto">
-                        Verify / Reply via Email
-                    </a>
-                    <span class="text-indigo-200 text-xs sm:text-sm">or reach directly at: <strong>admin@informationdomains.com</strong></span>
+        <!-- Email Marketing Target -->
+        <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+            <div class="bg-gradient-to-br from-indigo-600 to-indigo-900 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold mb-4">Received an offer from us?</h2>
+                    <p class="text-indigo-100 max-w-lg mx-auto mb-8 text-sm md:text-base leading-relaxed">
+                        We regularly reach out to selected brands regarding premium asset alignments. If you are verifying an email communication or looking to negotiate an acquisition, let’s connect securely.
+                    </p>
+                    <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-3 w-full">
+                        <a href="mailto:admin@informationdomains.com" class="bg-white text-indigo-900 font-bold px-8 py-3.5 rounded-xl hover:bg-slate-50 transition shadow-md w-full sm:w-auto">
+                            Verify / Reply via Email
+                        </a>
+                        <span class="text-indigo-200 text-xs sm:text-sm">or reach directly at: <strong>admin@informationdomains.com</strong></span>
+                    </div>
                 </div>
+                <div class="absolute -right-10 -bottom-10 text-indigo-500/10 text-9xl font-black select-none pointer-events-none">ID</div>
             </div>
-            <div class="absolute -right-10 -bottom-10 text-indigo-500/10 text-9xl font-black select-none pointer-events-none">ID</div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-8 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Information Domains (informationdomains.com). All rights reserved.</p>
+    <footer class="bg-white/90 border-t border-slate-100 py-8 text-center text-xs text-slate-500 backdrop-blur-md">
+        <p>&copy; 2026 INFORMATION DOMAINS (informationdomains.com). All rights reserved.</p>
         <p class="mt-2">Domain Portfolio & Brokerage Services.</p>
     </footer>
 
