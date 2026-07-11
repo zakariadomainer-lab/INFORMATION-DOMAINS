@@ -21,6 +21,10 @@
             background-position: center;
             background-attachment: fixed;
         }
+        /* كلاس لجعل خلفية اللوغو البيضاء شفافة ومدمجة مع خلفية الموقع */
+        .transparent-logo {
+            mix-blend-mode: multiply;
+        }
     </style>
 </head>
 <body class="text-slate-800 antialiased min-h-screen flex flex-col">
@@ -29,12 +33,13 @@
     <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="logo.png" alt="ID Logo" class="h-10 w-10 object-contain rounded-lg">
+                <!-- إضافة كلاس الشفافية هنا -->
+                <img src="logo.png" alt="ID Logo" class="h-10 w-10 object-contain transparent-logo">
                 <span class="font-bold text-xl tracking-wider text-indigo-950">INFORMATION <span class="text-indigo-600">DOMAINS</span></span>
             </div>
             <div>
                 <a href="mailto:admin@informationdomains.com" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition shadow-xs flex items-center gap-2">
-                    <i class="fa-regular fa-envelope"></i> Contact 
+                    <i class="fa-regular fa-envelope"></i> Contact us
                 </a>
             </div>
         </div>
@@ -44,9 +49,9 @@
     <main class="flex-grow">
         <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 text-center">
             
-            <!-- تم حذف المربع بالكامل ووضع الشعار فقط هنا بحجم كبير واحترافي -->
+            <!-- الشعار الكبير في المنتصف بدون المربع الأبيض المحيط به -->
             <div class="flex justify-center mb-8">
-                <img src="logo.png" alt="Information Domains Logo" class="h-32 w-32 md:h-40 md:w-40 object-contain drop-shadow-md rounded-2xl">
+                <img src="logo.png" alt="Information Domains Logo" class="h-44 w-44 md:h-52 md:w-52 object-contain transparent-logo">
             </div>
 
             <h1 class="text-4xl md:text-6xl font-black text-indigo-950 tracking-tight max-w-4xl mx-auto leading-tight">
@@ -124,7 +129,7 @@
 
     <!-- Footer -->
     <footer class="bg-white/90 border-t border-slate-100 py-8 text-center text-xs text-slate-500 backdrop-blur-md">
-        <p>&copy; 2026 INFORMATION DOMAINS (informationdomains.co). All rights reserved.</p>
+        <p>&copy; 2026 INFORMATION DOMAINS (informationdomains.com). All rights reserved.</p>
         <p class="mt-2">Domain Portfolio & Brokerage Services.</p>
     </footer>
 
