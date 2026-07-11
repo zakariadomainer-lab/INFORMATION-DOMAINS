@@ -11,10 +11,10 @@
             --brand-purple: #5145e5;
             --brand-dark: #1e1b4b;
         }
-        /* خلفية احترافية بيضاء هادئة مستوحاة من نمط الصورة المرفقة */
+        /* تعديل الامتداد إلى png مع إخفاء الأيقونات الستة وإظهار نسيج الخلفية فقط باحترافية */
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url('bg-pattern.jpg');
+            background-image: linear-gradient(rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.95)), url('bg-pattern.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -27,9 +27,7 @@
     <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-xs">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <!-- الشعار الأساسي -->
                 <img src="logo.png" alt="ID Logo" class="h-10 w-10 object-contain rounded-lg">
-                <!-- تم إضافة المسافة هنا بدقة -->
                 <span class="font-bold text-xl tracking-wider text-indigo-950">INFORMATION <span class="text-indigo-600">DOMAINS</span></span>
             </div>
             <div>
@@ -121,7 +119,7 @@
 
     <!-- Footer -->
     <footer class="bg-white/90 border-t border-slate-100 py-8 text-center text-xs text-slate-500 backdrop-blur-md">
-        <p>&copy; 2026 INFORMATION DOMAINS (informationdomains.com). All rights reserved.</p>
+        <p>&copy; 2026 INFORMATION DOMAINS (informationdomains.co). All rights reserved.</p>
         <p class="mt-2">Domain Portfolio & Brokerage Services.</p>
     </footer>
 
